@@ -1,0 +1,11 @@
+[Unit]
+Description=Wolfechess Discord Bot
+
+[Service]
+WorkingDirectory=/wolfebots/wolfechess
+ExecStart=/wolfebots/wolfechess/start.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+Wants=network-online.target
